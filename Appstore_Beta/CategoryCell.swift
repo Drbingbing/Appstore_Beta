@@ -136,14 +136,14 @@ class AppCell: UICollectionViewCell {
     
     func setupViews() {
         
-        imageView.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.width)
-        nameLabel.frame = CGRect(x: 0, y: frame.width + 1, width: frame.width, height: 40)
-        categoryLabel.frame = CGRect(x: 0, y: frame.width + 38, width: frame.width, height: 20)
-        priceLabel.frame = CGRect(x: 0, y: frame.width + 56, width: frame.width, height: 20)
-        
         addSubview(imageView)
         addSubview(nameLabel)
         addSubview(categoryLabel)
         addSubview(priceLabel)
+        
+        imageView.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.width)
+        nameLabel.frame = CGRect(x: 0, y: frame.width + 1, width: frame.width, height: 40)
+        categoryLabel.frame = CGRect(x: 0, y: frame.width + 38, width: frame.width, height: 20)
+        priceLabel.frame = CGRect(x: 0, y: frame.width + 56, width: frame.width, height: 20)
     }
 }
